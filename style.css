@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --blue: hsl(246, 80%, 60%);
+  /* work */
+  --lightRed: hsl(15, 100%, 70%);
+  /* play */
+  --softBlue: hsl(195, 74%, 62%);
+  /* study */
+  --lightred: hsl(348, 100%, 68%);
+  /* exercise */
+  --limeGreen: hsl(145, 58%, 55%);
+  /* social */
+  --violet: hsl(264, 64%, 52%);
+  /* self care */
+  --softOrange: hsl(43, 84%, 65%);
+  /* ### Neutral */
+
+  --veryDarkBlue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ###HEADER */
+body {
+  background-color: var(--veryDarkBlue);
+}
+.card {
+  margin-left: 5rem;
+  border-radius: 1rem;
+}
+.person {
+  background-color: var(--blue);
+  display: flex;
+  padding: 2rem 1.3rem 2rem 1.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 20rem;
+  align-items: center;
+}
+.hold-text {
+    align-items: center;
+    padding-left: 1.2rem;
+    color: white;
+}
+.person p {
+    font-size: 1rem;
+    color: rgba(212, 212, 212,0.6);
+    padding-bottom: 0.3rem;
+}
+.person h1 {
+    font-weight: 300;
+    font-size: 1.55rem;
+}
+.card {
+  background-color: var(--darkBlue);
+  width: 20rem;
+  height: 12.5rem;
+  border-radius: 1rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin-top: 3rem;
+  position: relative;
+}
+.person img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.buttons {
+  position: absolute;
+  /* top: 12rem; */
+  bottom: 1.5rem;
+}
+.card button {
+  background-color: var(--darkBlue);
+  color: var(--desaturatedBlue);
+  border: none;
+  cursor: pointer;
+  padding-left: 3.5rem;
+  font-size: 1.05rem;
+}
+.card button:nth-child(1) {
+padding-left: 1.8rem;
+}
