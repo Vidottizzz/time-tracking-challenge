@@ -29,13 +29,13 @@
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   color: white;
   margin-top: 2rem;
 }
 .attribution a {
-
+color: var(--violet);
 }
 
 /* ###HEADER */
@@ -106,9 +106,6 @@ body {
 }
 .active {
   color : white;
-}
-.card button span:active {
-  color: white;
 }
 .card button:nth-child(1) {
 padding-left: 1.8rem;
