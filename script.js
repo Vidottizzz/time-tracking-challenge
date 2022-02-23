@@ -12,20 +12,15 @@ var activedElement;
 let spans = document.querySelectorAll(".spans");
 let btns = document.querySelectorAll(".button");
 
-// for (var i = 0; i < spans.length; i++) {
-//   spans[i].addEventListener("click", function () {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace("active", "");
-//     this.className += " active";
-//   });
-// }
+for (var i = 0; i < spans.length; i++) {
+  spans[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
 
-const clearActiveButton = () => btns.forEach(button => button.classList.remove('active'));
 
-btns.forEach(button => button.addEventListener('click', event => {
-  clearActiveButton();
-  event.target.classList.add('active');
-}));
 
 fetch("data.json")
   .then(res => res.json())
