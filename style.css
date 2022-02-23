@@ -41,6 +41,8 @@ color: var(--violet);
 /* ###HEADER */
 body {
   background-color: var(--veryDarkBlue);
+  margin-left: 2rem;
+  
 }
 
 .person {
@@ -88,8 +90,7 @@ body {
 }
 .buttons {
   position: absolute;
-  /* top: 12rem; */
-  bottom: 1.5rem;
+  /* top: 12rem; */ bottom: 1.5rem;
 }
 .card button {
   background-color: var(--darkBlue);
