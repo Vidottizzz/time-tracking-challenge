@@ -129,6 +129,25 @@ padding-left: 1.8rem;
 .self-care {
   background-color: var(--softYellow);
 }
+label {
+  color: white;
+  margin-right: 2rem;
+  
+
+}
+.payment-method label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
 main .card-bg {
     /* background-image: url(/images/icon-work.svg); */
     width: 21rem;

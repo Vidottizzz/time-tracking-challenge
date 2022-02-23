@@ -11,10 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+ 
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
+    
     <header>
       <div class="card">
         <div class="person">
@@ -25,9 +26,13 @@
           </div>
         </div>
         <div class="buttons">
-          <button class="button"><span class="spans active">Daily</span></button>
-          <button class="button"><span class="spans">Weekly</span></button>
-          <button class="button"><span class="spans">Monthly</span></button>
+          <!-- <button id="btn1" class="button"><span class="spans active">Daily</span></button>
+          <button id="btn2" class="button"><span class="spans">Weekly</span></button>
+          <button id="btn3" class="button"><span class="spans">Monthly</span></button> -->
+
+          <input type = "radio" name = "duration" value = "daily" id = "daily"  data-time = "date" checked><label for = "daily" class = "change-duration" id = "daily-label">Daily</label>
+          <input type = "radio" name = "duration" value = "weekly" id = "weekly" data-time = "week"><label for = "weekly" class = "change-duration" id = "weekly-label">Weekly</label>
+          <input type = "radio" name = "duration" value = "monthly" id = "monthly" data-time = "month"><label for = "monthly" class = "change-duration" id = "monthly-label">Monthly</label>
         </div>
       </div>
     </header>
@@ -88,7 +93,7 @@
         </div>
         <div class="card-info-inside">
           <div class="time-work">
-            <p></p>
+            <p>Exercise</p>
             <h1 class="hours"></h1>
           </div>
           <div class="previous">
@@ -141,7 +146,6 @@
         >. Coded by <a href="#">Vidottizzz</a>.
       </div>
     </footer>
-
-     <script src="/script.js"></script>
+    <script src="/script.js" type="module"></script>
   </body>
 </html>
