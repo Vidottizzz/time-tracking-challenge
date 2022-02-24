@@ -8,14 +8,6 @@ const monthly_previous = [];
 const $spans = document.querySelectorAll(".spans");
 const $btns = document.querySelectorAll(".button");
 
-// for (var i = 0; i < $spans.length; i++) {
-//   $spans[i].addEventListener("click", function () {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace("active", "");
-//     this.className += " active";
-//   });
-// }
-
 fetch("data.json")
   .then((response) => response.json())
   .then((json_data) => {
@@ -33,8 +25,7 @@ fetch("data.json")
     const previousHours = document.querySelectorAll(".previous-hours");
     for (let i = 0; i < 6; i++) {
       currentHours[i].innerHTML = daily_current[i] + "hrs";
-      previousHours[i].innerHTML =
-        "Yesterday " + " - " + daily_previous[i] + "hrs";
+      previousHours[i].innerHTML = "Yesterday " + " - " + daily_previous[i] + "hrs";
     }
   });
 
@@ -58,22 +49,22 @@ function display(duration) {
   let range;
   switch (duration) {
     case "daily":
-       current = daily_current;
-       previous = daily_previous;
-       range = "Yesterday";
+      current = daily_current;
+      previous = daily_previous;
+      range = "Yesterday";
       break;
     case "weekly":
       current = weekly_current;
-       range = "Last Week";
-       previous = weekly_previous;
+      previous = weekly_previous;
+      range = "Last Week";
       break;
     case "monthly":
       current = monthly_current;
+      previous = monthly_previous;
       range = "Last Month";
-       previous = monthly_previous;
       break;
   }
-  for (let i = 0; i < 6; i++){
+  for (let i = 0; i < 6; i++) {
     hours[i].innerHTML = current[i] + "hrs";
     previous_hours[i].innerHTML = range + " - " + previous[i] + "hrs";
   }

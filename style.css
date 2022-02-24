@@ -185,6 +185,11 @@ main .card-info-inside {
     padding: 2rem 1.5rem 2rem 1.5rem;
     color: white;
 }
+main .card-info-inside:hover {
+  background-color: hsl(235, 44%, 40%);
+  cursor: pointer;
+
+}
 main .card-info-inside h1{
     font-weight: 300;
     padding-right: 4rem
@@ -200,4 +205,104 @@ main .previous {
  padding-bottom:  5rem;
  right: 1rem;
  top: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    display: flex;
+  }
+  main {
+    display: flex;
+    margin-top: 1.6rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .card {
+    height: 27rem;
+    width: 16rem;
+    margin-right: 1.5rem;
+    }
+  .person {
+    background-color: var(--blue);
+    display: flex;
+    padding: 1.8rem 1.3rem 2rem 1.3rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 16rem;
+    height: 19rem;
+    align-items: center;
+  }
+  .person img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 0rem;
+    position:absolute;
+    top: 1.5rem;
+  }
+  .hold-text {
+    text-align: left;
+    padding-left: 0rem;
+    padding-right: 6rem;
+    padding-top: 4.5rem;
+    color: white;
+}
+.hold-text h1 {
+  font-size: 2.5rem;
+}
+.card-info-inside{ 
+  top:3rem;
+}
+
+main .card-info-inside {
+  display: flex;
+  width: 16rem;
+  height: 12rem;
+  background-color: var(--darkBlue);
+  border-radius: 1rem;
+  /* margin-left: 5rem; */
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  color: white;
+  
+  
+}
+main .card-info {
+  position: relative;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  
+}
+main .card-bg {
+  width: 16rem;
+}
+.previous-hours {
+ position:absolute;
+ bottom: 0.7rem;
+ left: -5rem;
+}
+.time-work p {
+  margin-bottom: 1.5rem;
+  margin-top: -0.8rem;
+}
+.time-work h1 {
+  font-size: 3.2rem;
+  
+}
+.dot {
+  margin-top: -0.8rem;
+}
+.previous-hours{
+  position: absolute;
+  bottom: -1.5rem;
+  
+}
 }
