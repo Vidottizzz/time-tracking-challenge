@@ -91,25 +91,21 @@ body {
 .buttons {
   position: absolute;
   /* top: 12rem; */ bottom: 1.5rem;
+  margin-left: 1.8rem;
 }
-.card button {
-  background-color: var(--darkBlue);
+input[type="radio"] {
+  opacity: 0;
+}
+.change-duration{
   color: var(--desaturatedBlue);
-  border: none;
-  cursor: pointer;
-  padding-left: 3.7rem;
-  font-size: 1.05rem;
 }
-.card button span:hover {
+label:hover {
+color: white;
+cursor: pointer;
+}
+input[type="radio"]:checked + label{
   color: white;
 }
-.active {
-  color : white;
-}
-.card button:nth-child(1) {
-padding-left: 1.8rem;
-}
-
 /* ###MAIN */
 .work {
   background-color: var(--lightOrange);
