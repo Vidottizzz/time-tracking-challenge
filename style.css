@@ -210,6 +210,9 @@ main .previous {
 @media only screen and (min-width: 1200px) {
   body {
     display: flex;
+    position:relative;
+    margin-left: 5rem;
+    margin-top: 8rem;
   }
   main {
     display: flex;
@@ -221,7 +224,7 @@ main .previous {
     
   }
   .card {
-    height: 27rem;
+    height: 31.5rem;
     width: 16rem;
     margin-right: 1.5rem;
     }
@@ -234,7 +237,7 @@ main .previous {
     top: 0rem;
     left: 0rem;
     width: 16rem;
-    height: 19rem;
+    height: 23rem;
     align-items: center;
   }
   .person img {
@@ -278,7 +281,7 @@ main .card-info {
   position: relative;
   margin-top: 1.5rem;
   overflow: hidden;
-  margin-right: 1rem;
+  margin-right: 2rem;
   
 }
 main .card-bg {
@@ -302,7 +305,28 @@ main .card-bg {
 }
 .previous-hours{
   position: absolute;
-  bottom: -1.5rem;
-  
+  bottom: -1.5rem; 
 }
+.hold-card {
+position: absolute;
+bottom: -0.2rem;
+display: flex;
+}
+.hold-card .card-info {
+  height: 15rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+}
+.attribution a {
+color: var(--violet);
+}
+
 }
